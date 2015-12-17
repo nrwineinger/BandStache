@@ -1,4 +1,6 @@
 BandStache::Application.routes.draw do
+  resources :pins
+
   devise_for :users
   devise_for :installs
   root "pages#home"
